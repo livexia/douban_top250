@@ -37,5 +37,6 @@ class DoubanTop250Pipeline(object):
         # self.file.write(line_two.encode('utf-8'))
         # self.file.write(line_three.encode('utf-8'))
         # 加这一行无法进行爬虫
+        # TODO
     def close_spider(self, spider):
         self.file.close()
