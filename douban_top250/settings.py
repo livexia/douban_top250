@@ -90,7 +90,10 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 # TODO
-USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A'
+DOWNLOADER_MIDDLEWARES = {
+        'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware' : None,
+        'douban_top250.spiders.useragent.RandomUserAgentMiddleware' :400,
+    }
 ITEM_PIPELINES = {
    'douban_top250.pipelines.SaveToReadablePipeline': 300,
 }

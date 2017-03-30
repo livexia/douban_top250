@@ -1,6 +1,6 @@
 # second week upload
 
-TODO:完善爬虫，<del>完整解决输出格式问题,</del>加入随机ua模块
+TODO:完善爬虫，<del>完整解决输出格式问题,加入随机ua模块</del>
 
 scrapy crawl top250
 
@@ -9,6 +9,10 @@ scrapy crawl top250
 result.txt
 
 ![result](https://github.com/livexia/douban_top250/blob/master/screenshots/result.png)
+
+log
+
+![log](https://github.com/livexia/douban_top250/blob/master/screenshots/log.png)
 
 scrapy crawl top250 -o top250.json
 
