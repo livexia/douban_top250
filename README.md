@@ -6,6 +6,10 @@ scrapy crawl top250
 
 ![terminal](https://github.com/livexia/douban_top250/blob/master/screenshots/run.gif)
 
+result.txt
+
+![result](https://github.com/livexia/douban_top250/blob/master/screenshots/result.png)
+
 scrapy crawl top250 -o top250.json
 
 ![json](https://github.com/livexia/douban_top250/blob/master/screenshots/json.png)
@@ -17,3 +21,4 @@ scrapy crawl top250 -o top250.csv
 scrapy crawl top250 -o top250.xml
 
 ![xml](https://github.com/livexia/douban_top250/blob/master/screenshots/xml.png)
+
