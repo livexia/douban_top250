@@ -6,7 +6,6 @@ from douban_top250.items import DoubanTop250Item
 
 class Top250Spider(scrapy.Spider):
     name = "top250"
-    # TODO
     start_urls = [
         'https://movie.douban.com/top250/'
     ]
