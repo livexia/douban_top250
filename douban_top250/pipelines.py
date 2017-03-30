@@ -28,7 +28,7 @@ class SaveToReadablePipeline(object):
             link = ''.join(dict1['link'])
             quote = ''.join(dict1['quote'])
 
-            line_one = line_one + rank + '.' + title + ' 评分' + rate + ' (' + star + ')' + '\n'
+            line_one = line_one + rank + '.' + title + ' 评分：' + rate + ' (' + star + ')' + '\n'
             line_two = line_two + link + '\n'
             line_three = line_three + quote + '\n\n'
 
