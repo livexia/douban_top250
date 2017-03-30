@@ -17,8 +17,9 @@ class Top250Spider(scrapy.Spider):
             item['rank'] = info.xpath('div[@class="pic"]/em/text()').extract()
             item['title'] = info.xpath('div[@class="pic"]/a/img/@alt').extract()
             item['link'] = info.xpath('div[@class="pic"]/a/@href').extract()
-            item['star'] = info.xpath('div[@class="info"]/div[@class="bd"]/div[@class="star"]/span/em/text()').extract()
-            item['rate'] = info.xpath('div[@class="info"]/div[@class="bd"]/div[@class="star"]/span/text()').extract()
+            #item['star'] = info.xpath('div[@class="info"]/div[@class="bd"]/div[@class="star"]/span／text()').extract()
+            item['star'] = info.xpath('//*[@id="content"]/div/div[1]/ol/li[2]/div/div[2]/div[2]/div/span[4]/text()').extract()
+            item['rate'] = info.xpath('div[@class="info"]/div[@class="bd"]/div[@class="star"]/span[@class="rating_num"]/text()').extract()
             item['quote'] = info.xpath('div[@class="info"]/div[@class="bd"]/p[@class="quote"]/span/text()').extract()
             yield item
 
