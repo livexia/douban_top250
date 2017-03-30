@@ -1,5 +1,3 @@
-import logging
-from scrapy.utils.log import configure_logging
 import random
 from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
 
